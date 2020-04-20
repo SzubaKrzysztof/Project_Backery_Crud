@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginMainController">
+    <children>
+      <AnchorPane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+              <AnchorPane fx:id="pane1" prefHeight="520.0" prefWidth="1024.0">
+                  <children>
+                      <ImageView fitHeight="520.0" fitWidth="1024.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <image>
+                              <Image url="@resources/photoFour.jpg" />
+                          </image>
+                      </ImageView>
+                  </children>
+            </AnchorPane>
+              <AnchorPane fx:id="pane2" prefHeight="520.0" prefWidth="1024.0">
+                  <children>
+                      <ImageView fitHeight="520.0" fitWidth="1024.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <image>
+                              <Image url="@resources/photoTree.jpg" />
+                          </image>
+                      </ImageView>
+                  </children>
+            </AnchorPane>
+              <AnchorPane fx:id="pane3" prefHeight="520.0" prefWidth="1024.0">
+                  <children>
+                      <ImageView fitHeight="520.0" fitWidth="1024.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <image>
+                              <Image url="@resources/photoDue.jpg" />
+                          </image>
+                      </ImageView>
+                  </children>
+            </AnchorPane>
+              <AnchorPane fx:id="pane4" prefHeight="520.0" prefWidth="1024.0">
+                  <children>
+                      <ImageView fitHeight="520.0" fitWidth="1024.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <image>
+                              <Image url="@resources/photoOne.jpg" />
+                          </image>
+                      </ImageView>
+                  </children>
+            </AnchorPane>
+            <AnchorPane fx:id="textPane" layoutX="47.0" layoutY="76.0" prefHeight="312.0" prefWidth="619.0">
+               <children>
+                  <Text fill="#e9eb7c" layoutX="82.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please log in to start sestion" textAlignment="CENTER" wrappingWidth="458.00018310546875" AnchorPane.topAnchor="242.44000053405762">
+                     <font>
+                        <Font name="JetBrains Mono Regular" size="22.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#fcf9f9" radius="11.4825" width="26.93" />
+                     </effect>
+                  </Text>
+                  <Text fill="#e9eb7c" layoutX="223.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" AnchorPane.leftAnchor="223.0" AnchorPane.topAnchor="135.8400001525879">
+                     <font>
+                        <Font name="JetBrains Mono Regular" size="42.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#fcf9f9" radius="11.4825" width="26.93" />
+                     </effect>
+                  </Text>
+               </children>
+            </AnchorPane>
+              <AnchorPane fx:id="loginPane" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #E9E4D4; -fx-border-radius: 50px; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                  <effect>
+                      <DropShadow height="52.89" radius="26.87" spread="0.07" width="56.59">
+                          <color>
+                              <Color blue="0.9473684430122375" green="0.9473684430122375" red="0.9473684430122375" />
+                          </color>
+                  </DropShadow>
+                  </effect>
+                  <children>
+                      <JFXTextField fx:id="username" focusColor="#405aa800" labelFloat="true" layoutX="30.0" layoutY="190.0" opacity="0.48" prefHeight="35.0" promptText=" user name" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                  </JFXTextField>
+                      <JFXButton fx:id="singupButton" buttonType="RAISED" layoutX="124.0" layoutY="384.0" mnemonicParsing="false" onAction="#showSingUpPane" opacity="0.79" prefHeight="35.0" ripplerFill="#e6f9fc" style="-fx-background-color: #008AF3; -fx-background-radius: 50px;" text="Singup" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+                      <JFXPasswordField fx:id="password" focusColor="#405aa802" labelFloat="true" layoutX="30.0" layoutY="248.0" opacity="0.48" prefHeight="35.0" promptText="password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                      </JFXPasswordField>
+                      <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="337.0" mnemonicParsing="false" onAction="#Login" opacity="0.79" prefHeight="35.0" ripplerFill="#e6f9fc" style="-fx-background-color: #819830; -fx-background-radius: 50px;" text="Login" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+                     
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="149.0" text="Welcome to Bakery Assistant" />
+                  <AnchorPane layoutX="79.0" layoutY="11.0" prefHeight="117.0" prefWidth="136.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="91.0" fitWidth="126.0" layoutX="23.0" layoutY="13.0" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/bakery.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="dbstatus" alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="304.0" prefHeight="17.0" prefWidth="119.0" />
+                  </children>
+              </AnchorPane>
+              <AnchorPane fx:id="singupPane" prefHeight="443.0" prefWidth="300.0" style="-fx-background-color: #F4EFDE; -fx-border-radius: 50px; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                  <effect>
+                      <DropShadow height="43.25" radius="22.235" spread="0.33" width="47.69">
+                          <color>
+                              <Color blue="0.9035087823867798" green="0.9473684430122375" red="0.9429824352264404" />
+                          </color>
+                  </DropShadow>
+                  </effect>
+                  <children>
+                      <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="326.0" mnemonicParsing="false" onAction="#createAction" opacity="0.79" prefHeight="35.0" ripplerFill="WHITE" style="-fx-background-color: #819830; -fx-background-radius: 50px;" text="Create" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+                      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="124.0" layoutY="383.0" mnemonicParsing="false" onAction="#hideSingupPane" opacity="0.79" prefHeight="35.0" ripplerFill="WHITE" style="-fx-background-color: #FF2D00; -fx-background-radius: 50px;" text="Cancel" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+                      <JFXPasswordField fx:id="singupPassword" focusColor="#405aa802" labelFloat="true" layoutX="35.0" layoutY="210.0" opacity="0.58" prefHeight="35.0" promptText="password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                      </JFXPasswordField>
+                      <JFXTextField fx:id="singupName" focusColor="#405aa800" labelFloat="true" layoutX="78.0" layoutY="82.0" opacity="0.58" prefHeight="35.0" promptText="name" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="45.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                      </JFXTextField>
+                      <JFXPasswordField fx:id="singupConfirmPassword" focusColor="#405aa802" labelFloat="true" layoutX="35.0" layoutY="267.0" opacity="0.58" prefHeight="35.0" promptText="confirm  password" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                      </JFXPasswordField>
+                      <JFXTextField fx:id="singupAddress" focusColor="#405aa800" labelFloat="true" layoutX="35.0" layoutY="98.0" opacity="0.58" prefHeight="35.0" promptText="address" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                      </JFXTextField>
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="19.0" text="Create new account" />
+                      <JFXTextField fx:id="singupEmail" focusColor="#405aa800" labelFloat="true" layoutX="35.0" layoutY="152.0" opacity="0.58" prefHeight="35.0" promptText="email" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+                          <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                          </padding>
+                      </JFXTextField>
+                  </children>
+              </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="errorMessage" accessibleRole="IMAGE_VIEW" opacity="0.79" style="-fx-background-color: #F24B25; -fx-border-color: #FEFBFA; -fx-border-radius: 30px; -fx-background-radius: 30px;" visible="false" AnchorPane.bottomAnchor="-110.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="337.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="350.0" text="! Wrong login or password" textAlignment="CENTER" textFill="#dddbdb" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <padding>
+                  <Insets bottom="18.0" left="15.0" right="15.0" top="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginMessage" opacity="0.9" style="-fx-background-color: #8EA04A; -fx-background-radius: 30px; -fx-border-color: #FFFFFF; -fx-border-radius: 30px;" visible="false" AnchorPane.bottomAnchor="-110.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="337.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.76" prefWidth="350.0" style="-fx-background-color: #8EA04A; -fx-background-radius: 30px;" text="Welcome" textAlignment="CENTER" textFill="#f2eded" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <padding>
+                  <Insets bottom="18.0" left="15.0" right="15.0" top="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="rootPane" prefHeight="150.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
